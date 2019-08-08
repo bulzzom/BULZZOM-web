@@ -1,0 +1,135 @@
+@charset "utf-8";
+.bulzzomBody {
+   background-image: url("day.png");
+   
+    background-size: 100%;
+}
+
+.splashBody {
+    background-color: #261658;
+}
+
+.splash {
+    background-color: #261658;
+    border-color: #7AF6C4;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    color: #7AF6C4;
+    font-size: 150px;
+    width: 32%;
+    height: 32%;
+    padding: 2%;
+    margin-left: 32%;
+    margin-top: 60%;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #7AF6C4, 0 0 70px  #7AF6C4, 0 0 90px  #7AF6C4, 0 0 90px  #7AF6C4;
+    box-shadow:  0px 0px 30px #000000;
+}
+
+.eng {
+     text-align: justify;
+    font-size: 55px;
+    margin:0px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 60px;
+  top: 300px; 
+  left: 110px; 
+  border-radius: 34px;
+  box-shadow:  0px 0px 30px #000000;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 52px;
+  width: 52px;
+  left: 4px;
+  bottom: 4px;
+
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #022449;
+}
+
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(80px);
+    -ms-transform: translateX(80px);
+    transform: translateX(80px);
+    background-color: #F2F2F2;
+}
+
+
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ 
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+/* Rounded sliders */
+.slider:after
+{
+    content:'꺼줘';
+    display: block;
+    position: absolute;
+    transform: translate(0%,0%);
+    top: -100%;
+    width:100%;
+    text-align:center;
+    font-size: 25px;
+    color: #264437;
+    font-family: Verdana, sans-serif;
+    
+}
+
+input:checked + .slider:after
+{  
+    content:'켜줘';
+    color: #7AF6C4;
+    text-shadow: 0 0 1px #fff, 0 0 2px  #fff, 0 0 3px  #7AF6C4, 0 0 4px  #7AF6C4;
+}
+/*
+.slider:after .bulzzomBody{
+    background-image:url("night.png");
+}
+*/
+
